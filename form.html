@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>STRONG FORM</h1>
+    <form action="friday.php", method="post">
+    
+    <!-- Name --> 
+    <label for="name">Name:</label> 
+    <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="50" autocomplete="name"><br><br> 
+    <!-- Email --> 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email"><br><br> 
+    <!-- Password --> 
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br> 
+    <!-- Gender --> 
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="">Select your gender</option> 
+        <option value="male">Male</option> 
+        <option value="female">Female</option>
+        <option value="other">Other</option> 
+    </select><br><br> 
+    <!-- Interests --> 
+    <label for="interests">Interests:</label><br> 
+    <input type="checkbox" id="coding" name="interests" value="coding"> 
+    <label for="coding">Coding</label><br> 
+    <input type="checkbox" id="reading" name="interests" value="reading"> 
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="traveling" name="interests" value="traveling"> 
+    <label for="traveling">Traveling</label><br><br>
+    <!-- Profile Picture --> 
+    <label for="profile_picture">Profile Picture:</label>
+    <input type="file" id="profile_picture" name="profile_picture" accept="image/*"><br>
+    <!-- Submit --> <input type="submit" value="Submit">
+</form>
+
+
+
+    
+</body>
+</html>
